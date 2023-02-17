@@ -1,6 +1,6 @@
 "use strict";
 
-// capture phase
+//1. capture phase
 // document.querySelector("#grandparent").addEventListener(
 //   "click",
 //   () => {
@@ -33,8 +33,6 @@
 //   true
 // );
 
-// // output
-
 // var outputText = document.querySelector("#output-text");
 
 // function print(text) {
@@ -45,7 +43,7 @@
 //   outputText.textContent = "";
 // });
 
-// // bubble phase
+// //2.  bubble phase
 // document.querySelector("#grandparent").addEventListener("click", () => {
 //   print("Grandparent click event in bubble");
 // });
@@ -74,7 +72,7 @@
 //   outputText.textContent = "";
 // });
 
-// complete flow
+//3.  complete flow
 
 document.querySelector("#grandparent").addEventListener("click", (e) => {
   print(EVENT_PHASE[e.eventPhase] + ": Grandparent click event");
@@ -120,8 +118,6 @@ document.querySelector("#btn").addEventListener(
   },
   true
 );
-
-// output;
 
 var outputText = document.querySelector("#output-text");
 
