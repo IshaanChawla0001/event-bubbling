@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Event propagation</title>
+  </head>
+  <body>
+    <!-- main -->
+
+    <div class="container">
+      <div id="grandparent">
+        Grand Parent
+        <div id="parent">
+          Parent
+          <div id="child">
+            Child
+            <div class="btn-div">
+              <button id="btn">Click</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- output -->
+
+      <div class="output">
+        <span class="output-header">Output</span>
+        <button id="output-button">Clear Output</button>
+        <p id="output-text"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
