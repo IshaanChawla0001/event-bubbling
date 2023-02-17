@@ -1,6 +1,6 @@
 "use strict";
 
-//1. capture phase
+/////////////////////      1. capture phase  /////////////////////////////////////
 // document.querySelector("#grandparent").addEventListener(
 //   "click",
 //   () => {
@@ -43,7 +43,7 @@
 //   outputText.textContent = "";
 // });
 
-// //2.  bubble phase
+//////////////////////////////          2.  bubble phase        //////////////////////////////////
 // document.querySelector("#grandparent").addEventListener("click", () => {
 //   print("Grandparent click event in bubble");
 // });
@@ -72,7 +72,7 @@
 //   outputText.textContent = "";
 // });
 
-//3.  complete flow
+///////////////////////////           3.complete flow(bubbliing, target and capture)      /////////////////////////////////
 
 document.querySelector("#grandparent").addEventListener("click", (e) => {
   print(EVENT_PHASE[e.eventPhase] + ": Grandparent click event");
